@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-DUO-logo-zmbizi">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="DUO-logo-zmbizi" clip-path="url(#clip-DUO-logo-zmbizi)">
+    <rect width="100" height="100" fill="#fff"/>
+    <g id="DUO-logo" transform="translate(0.067 0)">
+      <g id="zmbizi" transform="translate(0 0.136)">
+        <path id="Path_8593" data-name="Path 8593" d="M0,23.5V41.451L17.723,23.5Z" fill="#141414"/>
+        <path id="Path_8594" data-name="Path 8594" d="M80.521,76.318h17.43V58.664Z" fill="#141414"/>
+        <path id="Path_8595" data-name="Path 8595" d="M58.021-.136H0V12.213H45.674L0,57.885V75.2L75.334-.136Z" fill="#141414"/>
+        <path id="Path_8596" data-name="Path 8596" d="M97.951-.136H90.695L0,90.559v9.305H8.006L97.951,9.919Z" fill="#141414"/>
+        <path id="Path_8597" data-name="Path 8597" d="M97.951,42.442V25.129L35.565,87.515h-.142v.142L23.216,99.864H97.951V87.515H52.878Z" fill="#141414"/>
+      </g>
+    </g>
+  </g>
+</svg>
