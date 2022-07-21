@@ -36,14 +36,8 @@ const DatabaseHelper_1 = __importDefault(require("./helpers/DatabaseHelper"));
             delete unionData.datasets;
             const unsavedUnion = new Union_1.default(unionData);
             const savedUnion = await unsavedUnion.save();
-            // console.log(
-            //   `DataController#create: datasets: ${JSON.stringify(
-            //     datasets ? datasets.length : 0
-            //   )}`
-            // );
-            // console.log(
-            //   `DataController#create: datasets: ${JSON.stringify(datasets, null, 2)}`
-            // );
+            console.log(`DataController#create: datasets: ${JSON.stringify(datasets ? datasets.length : 0)}`);
+            console.log(`DataController#create: datasets: ${JSON.stringify(datasets, null, 2)}`);
             for (const dataset of datasets) {
                 const unsavedDataset = new Dataset_1.default(dataset);
                 unsavedDataset.union = savedUnion;

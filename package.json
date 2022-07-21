@@ -9,7 +9,7 @@
     "build": "tsc",
     "db:start": "yarn build && docker-compose up -d && node dist/src/create.js",
     "db:seed": "node dist/src/seed.js",
-    "db:stop": "docker stop mongodb",
+    "db:stop": "docker stop db",
     "db:purge": "node dist/src/purge.js"
   },
   "dependencies": {
