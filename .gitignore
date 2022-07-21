@@ -1,0 +1,23 @@
+# Dependencies
+node_modules
+
+# Environment Variables
+.env
+
+**/.DS_Store
+
+# Build
+dist
+
+# Test
+coverage
+.jest/globalConfig.json
+globalConfig.json
+
+# Yarn
+yarn-error.log
+
+# Docker Compose
+data
+!uploads/.gitkeep
+uploads
