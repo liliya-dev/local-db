@@ -11,42 +11,6 @@ export type DatabaseConfig = {
   uri?: string;
 };
 
-export type AWSConfig = {
-  s3region?: string;
-};
-
-export type Auth0Config = {
-  issuerBaseURL?: string;
-  audience?: string;
-};
-
-export type SearchConfig = {
-  index: string;
-  scheme: string;
-  host: string;
-  port: string;
-  auth?: {
-    username?: string;
-    password?: string;
-  };
-};
-
-export type RevolutConfig = {
-  api?: string;
-  apiKey?: string;
-};
-
-export type Config = {
-  express: ExpressConfig;
-  logging: LoggingConfig;
-  cache: CacheConfig;
-  db: DatabaseConfig;
-  aws: AWSConfig;
-  auth0: Auth0Config;
-  search: SearchConfig;
-  env?: string;
-};
-
 /**
  * Representation of user account data.
  * @property {string} operatorOfUnion - String hash ID linking union to user.
@@ -68,15 +32,6 @@ export type Config = {
  * @property {string} datasets - List of ids of datasets being purchased.
  * @see {@link https://developer.revolut.com/docs/revolut-checkout-js/initialize-widget/instance/instance-pay-with-popup}
  */
-export interface IRevolutPurchaseOrder {
-  id?: string;
-  amountUSD: number;
-  buyerEmail?: string;
-  created?: Date;
-  datasets: string[];
-  revolutOrderId?: string;
-  revolutPublicId?: string;
-}
 
 export interface IAttachment {
   id?: string;
@@ -91,10 +46,6 @@ export interface IAttachment {
   url?: string;
   created?: Date;
   updated?: Date;
-}
-
-export interface IFiles {
-  [key: string]: Express.Multer.File[];
 }
 
 export interface IDataset extends MongooseDocument {
@@ -176,14 +127,5 @@ export type MongooseDocument = {
   _id?: string;
   __v?: string;
 };
-
-export type ElasticsearchConfig = {
-  node: string;
-  auth?: {
-    username?: string;
-    password?: string;
-  };
-};
-
 
 

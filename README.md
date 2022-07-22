@@ -30,4 +30,5 @@ Run `yarn db:purge`
 TODOS:
 - Check if all the data created correctly
 - Write tests
+- add eslint & prettier
 - Remove create/clear controllers from the BE repo

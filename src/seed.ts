@@ -145,4 +145,5 @@ import DatabaseHelper from './helpers/DatabaseHelper';
   } catch (e) {
     console.log(`unable to connect to database: ${uri}`);
   }
+  process.exit()
 })();

@@ -29,8 +29,9 @@ import DatabaseHelper from './helpers/DatabaseHelper';
     await Union.deleteMany({});
     await Dataset.deleteMany({});
     
-    
+    console.log('Cleared data')
   } catch (e) {
     console.log(`unable to connect to database: ${uri}`);
   }
+  process.exit()
 })();
