@@ -122,13 +122,13 @@ import DatabaseHelper from './helpers/DatabaseHelper';
           ]) {
             const sourceFilepath = path.join(
               __dirname,
-              `../../static/${filename}`
+              `/static/${filename}`
             );
             const targetFilepath = path.join(
               __dirname,
               parentPath,
               `/uploads/${id}/${filename}`
-            );
+              );
             const sourceExists = await fs.pathExists(sourceFilepath);
             if (sourceExists) {
               await fs.copy(sourceFilepath, targetFilepath);

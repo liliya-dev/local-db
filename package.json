@@ -6,7 +6,8 @@
   "author": "<chuiko1112@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build:assets": "cp -R ./src/static/ ./dist/src/static",
+    "build": "tsc && yarn build:assets",
     "db:start": "yarn build && docker-compose up -d && node dist/src/create.js",
     "db:seed": "node dist/src/seed.js",
     "db:stop": "docker stop db",
